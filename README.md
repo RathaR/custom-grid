@@ -1,7 +1,8 @@
 # custom-grid for AngularJS
 
-Supported features
+Supported features: 
 
+Live demo: http://rathar.github.io/custom-grid
 Configurable filtering, sorting and editing for primitive type columns
 
 Configurable paging: classic/infinite scroll
