@@ -6,7 +6,7 @@ angular.module('customApp')
         var firstName = 'Name-' + _.random(0, 100, false);
         var lastName = 'Surname-' + _.random(0, 100, false);
         data.push({
-          Id: _.random(1e5, 10e6-1, false).toString(),
+          Id: _.random(1e5, 10e6 - 1, false).toString(),
           FirstName: firstName,
           LastName: lastName,
           Age: _.random(18, 60, false),

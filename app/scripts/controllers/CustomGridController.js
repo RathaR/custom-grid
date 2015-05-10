@@ -1,6 +1,6 @@
 'use strict';
 angular.module('customApp')
-  .controller('CustomGridController', function ($scope, CustomGrid, $modal) {
+  .controller('CustomGridController', function ($scope, customGrid, $modal) {
     var grid;
 
     $scope.initGrid = $scope.withSpinner(init);
@@ -14,7 +14,7 @@ angular.module('customApp')
     $scope.saveInlineChanges = saveInlineChanges;
 
     function init(options) {
-      $scope.grid = grid = new CustomGrid(options);
+      $scope.grid = grid = new customGrid(options);
       $scope.element.data('custom-grid', grid);
       $scope.$broadcast('grid:init', grid);
       $scope.sort = $scope.withSpinner(sort);
