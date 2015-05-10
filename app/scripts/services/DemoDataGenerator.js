@@ -1,6 +1,7 @@
 angular.module('customApp')
   .service('DemoDataGenerator', function () {
     var getData = function (count) {
+      var emailProviders = ['gmail.com', 'mail.ru', 'ukr.net', 'yandex.ru', 'rambler.ru']
       var data = [];
       _.times(count, function () {
         var firstName = 'Name-' + _.random(0, 100, false);
@@ -10,7 +11,7 @@ angular.module('customApp')
           FirstName: firstName,
           LastName: lastName,
           Age: _.random(18, 60, false),
-          Email: firstName + '@gmail.com'
+          Email: firstName + '@'+  emailProviders[_.random(0, emailProviders.length-1, false)]
         })
       });
       return data;

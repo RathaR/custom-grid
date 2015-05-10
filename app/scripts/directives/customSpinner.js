@@ -30,6 +30,8 @@ angular.module("customApp")
               invokeFn.apply(null, arguments);
             }
             finally {
+              //it's only for demo
+              ///TODO remove this timeout
               $timeout($scope.spinnerStop, 2000);
             }
           };
