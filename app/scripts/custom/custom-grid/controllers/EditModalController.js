@@ -1,5 +1,5 @@
 'use strict';
-angular.module('customApp')
+angular.module('custom-grid')
   .controller('EditModalController', function ($scope, dataItem) {
     $scope.dataItem = angular.copy(dataItem);
     $scope.columns = extractColumns(dataItem);

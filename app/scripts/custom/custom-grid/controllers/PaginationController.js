@@ -1,5 +1,5 @@
 'use strict';
-angular.module('customApp')
+angular.module('custom-grid')
   .controller('PagingController', function ($scope, $rootScope) {
     var grid;
     $scope.$on('grid:init', function (event, gridInstance) {

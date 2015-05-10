@@ -1,8 +1,8 @@
 'use strict';
-angular.module('customApp')
+angular.module('custom-grid')
   .directive('customGrid', function () {
     return {
-      templateUrl: 'views/customGridTemplate.html',
+      templateUrl: 'scripts/custom/custom-grid/views/customGridTemplate.html',
       restrict: 'EA',
       controller: 'CustomGridController',
       scope: true,

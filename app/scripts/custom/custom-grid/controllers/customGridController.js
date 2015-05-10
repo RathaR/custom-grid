@@ -1,5 +1,5 @@
 'use strict';
-angular.module('customApp')
+angular.module('custom-grid')
   .controller('CustomGridController', function ($scope, customGrid, $modal) {
     var grid;
 
@@ -63,7 +63,7 @@ angular.module('customApp')
     function editModal(dataItem, event) {
       event.stopPropagation();
       var modalOptions = {
-        templateUrl: "views/editModal.html",
+        templateUrl: "scripts/custom/custom-grid/views/editModalTemplate.html",
         scope: $scope,
         controller: 'EditModalController',
         size: 'sm',

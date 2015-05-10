@@ -1,5 +1,5 @@
 'use strict';
-angular.module('customApp')
+angular.module('custom-grid')
   .controller('AgeColumnFilterController', function ($scope) {
     $scope.ages = [{
       name: '10-20',

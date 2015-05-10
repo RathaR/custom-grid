@@ -1,21 +1,21 @@
 'use strict';
-angular.module('customApp')
-  .provider('customGrid', function() {
-    this.$get = function() {
-      var defaults = this.defaults = {
-        pageSize: 10,
-        virtualization: false,
-        sortable: true,
-        filterable: true,
-        editable: true,
-        data: [{
-          Id: '1',
-          FirstName: 'FirstName',
-          LastName: 'LastName',
-          Age: 12,
-          Email: 'Email'
-        }]
-      };
+angular.module('custom-grid')
+  .provider('customGrid', function () {
+    var defaults = this.defaults = {
+      pageSize: 10,
+      virtualization: false,
+      sortable: true,
+      filterable: true,
+      editable: true,
+      data: [{
+        Id: '1',
+        FirstName: 'FirstName',
+        LastName: 'LastName',
+        Age: 12,
+        Email: 'Email'
+      }]
+    };
+    this.$get = function () {
       var GridFactory = function (options) {
         var that = this;
         var _total = function () {
@@ -147,9 +147,9 @@ angular.module('customApp')
           }
         };
 
-        var _selectAll = function() {
-          _.each(that.view, function(dataItem) {
-            if(!dataItem.__selected) {
+        var _selectAll = function () {
+          _.each(that.view, function (dataItem) {
+            if (!dataItem.__selected) {
               that.select(dataItem);
             }
           });
@@ -189,7 +189,7 @@ angular.module('customApp')
           that.filter();
         };
 
-        var _init = function(options) {
+        var _init = function (options) {
 
           var that = this;
 

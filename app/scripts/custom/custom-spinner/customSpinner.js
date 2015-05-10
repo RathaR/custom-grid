@@ -1,7 +1,6 @@
 'use strict';
-angular.module("customApp")
+angular.module("custom-spinner", [])
   .directive('customSpinner', function ($timeout) {
-
     return {
       priority: 600,
       controller: function ($scope, $element) {
