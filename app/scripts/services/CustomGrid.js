@@ -135,7 +135,11 @@ angular.module('customApp')
       };
 
       var _selectAll = function() {
-        _.each(that.view, that.select);
+        _.each(that.view, function(dataItem) {
+          if(!dataItem.__selected) {
+            that.select(dataItem);
+          }
+        });
       };
 
       var _clearSelection = function () {
