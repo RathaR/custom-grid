@@ -3,4 +3,3 @@ dist
 .tmp
 .idea
 .sass-cache
-bower_components
