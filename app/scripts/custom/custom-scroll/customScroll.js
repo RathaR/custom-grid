@@ -1,5 +1,5 @@
 'use strict';
-angular.module('customApp')
+angular.module('custom-scroll', [])
   .directive('customScroll', function ($rootScope) {
     return {
       restrict: 'EA',

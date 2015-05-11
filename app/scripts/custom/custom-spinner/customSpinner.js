@@ -1,7 +1,6 @@
 'use strict';
-angular.module("customApp")
+angular.module("custom-spinner", [])
   .directive('customSpinner', function ($timeout) {
-
     return {
       priority: 600,
       controller: function ($scope, $element) {
@@ -30,6 +29,8 @@ angular.module("customApp")
               invokeFn.apply(null, arguments);
             }
             finally {
+              //it's only for demo
+              ///TODO remove this timeout
               $timeout($scope.spinnerStop, 2000);
             }
           };

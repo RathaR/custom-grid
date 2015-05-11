@@ -1,11 +1,11 @@
 <div class="custom-grid">
   <table class="table table-striped table-hover header-fixed">
     <thead>
-    <tr class="toolbar-row" ng-include="'views/toolbarRow.html'" ng-if="grid._options.editable">
+    <tr class="toolbar-row" ng-include="'scripts/custom/custom-grid/views/toolbarRowTemplate.html'" ng-if="grid._options.editable">
     </tr>
-    <tr class="header-row" ng-include="'views/headerRow.html'">
+    <tr class="header-row" ng-include="'scripts/custom/custom-grid/views/headerRowTemplate.html'">
     </tr>
-    <tr class="filter-row" ng-if="grid._options.filterable" ng-include="'views/filterRow.html'">
+    <tr class="filter-row" ng-if="grid._options.filterable" ng-include="'scripts/custom/custom-grid/views/filterRowTemplate.html'">
     </tr>
     </thead>
     <tbody custom-scroll silent="!grid.virtualization">
@@ -32,7 +32,7 @@
           </div>
         </div>
       </td>
-      <td ng-if="grid._options.editable" height="100%" ng-include="'views/actionsColumnTemplate.html'" data-column="actions"></td>
+      <td ng-if="grid._options.editable" height="100%" ng-include="'scripts/custom/custom-grid/views/actionsColumnTemplate.html'" data-column="actions"></td>
     </tr>
     </tbody>
   </table>

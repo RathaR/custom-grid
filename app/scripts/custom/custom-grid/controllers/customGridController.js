@@ -1,6 +1,6 @@
 'use strict';
-angular.module('customApp')
-  .controller('CustomGridController', function ($scope, CustomGrid, $modal) {
+angular.module('custom-grid')
+  .controller('CustomGridController', function ($scope, customGrid, $modal) {
     var grid;
 
     $scope.initGrid = $scope.withSpinner(init);
@@ -14,7 +14,7 @@ angular.module('customApp')
     $scope.saveInlineChanges = saveInlineChanges;
 
     function init(options) {
-      $scope.grid = grid = new CustomGrid(options);
+      $scope.grid = grid = new customGrid(options);
       $scope.element.data('custom-grid', grid);
       $scope.$broadcast('grid:init', grid);
       $scope.sort = $scope.withSpinner(sort);
@@ -63,7 +63,7 @@ angular.module('customApp')
     function editModal(dataItem, event) {
       event.stopPropagation();
       var modalOptions = {
-        templateUrl: "views/editModal.html",
+        templateUrl: "scripts/custom/custom-grid/views/editModalTemplate.html",
         scope: $scope,
         controller: 'EditModalController',
         size: 'sm',

@@ -175,7 +175,7 @@ module.exports = function (grunt) {
       }
     },
 
-    // Automatically inject Bower components into the app
+    // Automatically inject Bower controllers into the app
     wiredep: {
       app: {
         src: ['<%= yeoman.app %>/index.html'],

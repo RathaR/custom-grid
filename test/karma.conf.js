@@ -3,7 +3,7 @@
 // Generated on 2015-05-05 using
 // generator-karma 1.0.0
 
-module.exports = function(config) {
+module.exports = function (config) {
   'use strict';
 
   config.set({
@@ -35,14 +35,28 @@ module.exports = function(config) {
       'bower_components/angular-bootstrap/ui-bootstrap-tpls.js',
       'bower_components/angular-mocks/angular-mocks.js',
       // endbower
-      "app/scripts/**/*.js",
+
+      ///TODO: Remove this hell, configure normal build flow
+      'app/scripts/app.js',
+      'app/scripts/config.js',
+      'app/scripts/services/DemoDataGenerator.js',
+      'app/scripts/controllers/MainController.js',
+      'app/scripts/controllers/about.js',
+      'app/scripts/custom/custom-grid/grid.js',
+      'app/scripts/custom/custom-grid/customGridProvider.js',
+      'app/scripts/custom/custom-grid/controllers/AgeColumnFilterController.js',
+      'app/scripts/custom/custom-grid/controllers/PaginationController.js',
+      'app/scripts/custom/custom-grid/controllers/EditModalController.js',
+      'app/scripts/custom/custom-grid/controllers/CustomGridController.js',
+      'app/scripts/custom/custom-grid/customGridDirective.js',
+      'app/scripts/custom/custom-scroll/customScroll.js',
+      'app/scripts/custom/custom-spinner/customSpinner.js',
       "test/mock/**/*.js",
       "test/spec/**/*.js"
     ],
 
     // list of files / patterns to exclude
-    exclude: [
-    ],
+    exclude: [],
 
     // web server port
     port: 8080,
