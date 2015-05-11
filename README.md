@@ -1,24 +1,26 @@
-# custom-grid for AngularJS
+# custom-grid for AngularJS [![Build Status](https://travis-ci.org/RathaR/custom-grid.svg?branch=master)](https://travis-ci.org/RathaR/custom-grid)
+
 Live demo: http://rathar.github.io/custom-grid
-Supported features:
 
-Configurable filtering, sorting and editing for primitive type columns
+## Supported features:
 
-Configurable paging: classic/infinite scroll
+  Configurable filtering, sorting and editing for primitive type columns
 
-Configurable spinner
+  Configurable paging: classic/infinite scroll
 
-Some performance optimization(one-time binding used if possible, to avoid extra watchers)
+  Configurable spinner
 
-Items editing in two ways: modal and inline
+  Some performance optimization(one-time binding used if possible, to avoid extra watchers)
 
-Multiple items selecting and removing
+  Items editing in two ways: modal and inline
 
-Filtering by selection
+  Multiple items selecting and removing
 
-Select all currently viewed items
+  Filtering by selection
 
-Selection state saving
+  Select all currently viewed items
+
+  Selection state saving
 
 ## Build & development
 
